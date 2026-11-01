@@ -48,7 +48,7 @@ include(FetchContent)
 FetchContent_Declare(
     Vector
     GIT_REPOSITORY https://github.com/DanielArndt0/Vector.git
-    GIT_TAG 1.0.0
+    GIT_TAG v1.0.0
 )
 
 FetchContent_MakeAvailable(Vector)
@@ -66,7 +66,6 @@ target_link_libraries(my_target PRIVATE Vector::Vector)
 ```
 
 Vector is header-only and does not require a separately compiled binary.
-
 
 ## Compatibility
 
