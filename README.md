@@ -58,7 +58,15 @@ target_link_libraries(my_target PRIVATE Vector::Vector)
 
 Replace `my_target` with your application's CMake target.
 
-CMake automatically retrieves the specified version and configures the required include directories. No separately compiled library is needed.
+If you already have the Vector source directory inside your CMake project, you can add it instead:
+
+```cmake
+add_subdirectory(path/to/Vector)
+target_link_libraries(my_target PRIVATE Vector::Vector)
+```
+
+Vector is header-only and does not require a separately compiled binary.
+
 
 ## Compatibility
 
